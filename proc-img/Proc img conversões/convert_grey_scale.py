@@ -10,7 +10,7 @@ def conversion():
             b = int(b)
             
             if 0 <= r <= 255 and 0 <= g <= 255 and 0 <= b <= 255:
-                gray_scale = (0.3 * r) + (0.59 * g) + (0.11 * b)
+                gray_scale = (r +  g + b) / 3
                 return gray_scale, r, g, b
             else:
                 print("Os valores devem estar entre 0 e 255.")
